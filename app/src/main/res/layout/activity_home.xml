@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.mylibrarymvp.tabBar.TabBarConsLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tab_layout"
+    tools:context=".data.home.HomeActivity">
+
+   <!-- <include  layout="@layout/home_activity_incould"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.example.mylibrarymvp.tabBar.ChildTabBar
+        android:id="@+id/linear1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linear2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <com.example.mylibrarymvp.tabBar.ChildTabBarIv
+            android:id="@+id/tab_iv_home"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/tab_recommend_selector"
+            />
+        <TextView
+            android:id="@+id/tab_tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐" />
+    </com.example.mylibrarymvp.tabBar.ChildTabBar>
+
+    <com.example.mylibrarymvp.tabBar.ChildTabBar
+        android:id="@+id/linear2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linear1"
+        app:layout_constraintEnd_toStartOf="@+id/linear3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linear1"
+        app:layout_constraintTop_toTopOf="@+id/linear1">
+
+        <com.example.mylibrarymvp.tabBar.ChildTabBarIv
+            android:id="@+id/tab_iv_video"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/tab_video_selector" />
+
+        <TextView
+            android:id="@+id/tab_tv_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频" />
+    </com.example.mylibrarymvp.tabBar.ChildTabBar>
+
+    <com.example.mylibrarymvp.tabBar.ChildTabBar
+        android:id="@+id/linear3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linear2"
+        app:layout_constraintEnd_toStartOf="@+id/linear4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linear2"
+        app:layout_constraintTop_toTopOf="@+id/linear2">
+
+        <com.example.mylibrarymvp.tabBar.ChildTabBarIv
+            android:id="@+id/tab_iv_special"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/tab_special_selector" />
+
+        <TextView
+            android:id="@+id/tab_tv_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专题" />
+    </com.example.mylibrarymvp.tabBar.ChildTabBar>
+
+    <com.example.mylibrarymvp.tabBar.ChildTabBar
+        android:id="@+id/linear4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linear3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linear3"
+        app:layout_constraintTop_toTopOf="@+id/linear3">
+
+        <com.example.mylibrarymvp.tabBar.ChildTabBarIv
+            android:id="@+id/tab_iv_mi"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/tab_mine_selector" />
+
+        <TextView
+            android:id="@+id/tab_tv_mi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的" />
+    </com.example.mylibrarymvp.tabBar.ChildTabBar>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/colorBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <!--<RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RadioButton
+            android:id="@+id/tuijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            style="@style/button_tag_style"
+            android:drawableTop="@drawable/tab_recommend_selector"
+            android:text="推荐" />
+
+        <RadioButton
+            android:id="@+id/shipin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            style="@style/button_tag_style"
+            android:drawableTop="@drawable/tab_video_selector"
+            android:text="视频"
+           />
+
+        <RadioButton
+            android:id="@+id/zhuanti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            style="@style/button_tag_style"
+            android:drawableTop="@drawable/tab_special_selector"
+            android:text="专题"
+           />
+
+        <RadioButton
+            android:id="@+id/wo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            style="@style/button_tag_style"
+            android:drawableTop="@drawable/tab_mine_selector"
+            android:text="我"
+            />
+
+    </RadioGroup>-->
+
+
+</com.example.mylibrarymvp.tabBar.TabBarConsLayout>

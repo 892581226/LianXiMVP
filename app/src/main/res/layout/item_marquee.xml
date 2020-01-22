@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.sunfusheng.marqueeview.MarqueeView
+        android:id="@+id/marquee"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:mvAnimDuration="1000"
+        app:mvDirection="right_to_left"
+        app:mvInterval="4000"
+        app:mvTextColor="@color/colorAccent"
+        app:mvTextSize="14sp"
+        app:mvSingleLine="true"/>
+</LinearLayout>
