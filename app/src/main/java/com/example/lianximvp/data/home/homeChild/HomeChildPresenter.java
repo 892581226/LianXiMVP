@@ -17,10 +17,10 @@ public class HomeChildPresenter extends BaseMvpPresenter<IHomeContract.IHomeLanP
     }
 
     @Override
-    public void registers(String id, String start, String random, String pointTime) {
+    public void registers(String id, int start, String random, String pointTime) {
         HashMap<String, String> commonParams = ParamsUtils.getCommonParams();
         commonParams.put("id",id);
-        commonParams.put("start",start);
+        commonParams.put("start",start+"");
         commonParams.put("random",random);
         commonParams.put("point_time",pointTime);
         homeRePository.register(commonParams, new IBaseCallBack<UserColumnListLan>() {

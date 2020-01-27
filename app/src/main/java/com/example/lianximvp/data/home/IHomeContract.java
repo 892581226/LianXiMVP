@@ -23,7 +23,7 @@ public interface IHomeContract {
         void onRegisterResult(UserColumnListLan data, String msg);
     }
     public interface IHomeLanPsdPresenter extends IBaseMvpPresenter<IHomeContract.IHomeLanPsdView> {
-        void registers(String id,String start,String random,String pointTime);
+        void registers(String id,int start,String random,String pointTime);
     }
     public interface IHomeLanPsdModel{
         void register(Map<String,String> params, IBaseCallBack<UserColumnListLan> callBack);

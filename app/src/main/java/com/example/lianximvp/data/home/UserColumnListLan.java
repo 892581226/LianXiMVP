@@ -7,7 +7,24 @@ public class UserColumnListLan {
     private ArrayList<BannerList> banner_list;
     private ArrayList<ArticleList> article_list;
     private ArrayList<Flashlist> flash_list;
+    private int more;
+    private int start;
 
+    public int getStart() {
+        return start;
+    }
+
+    public void setStart(int start) {
+        this.start = start;
+    }
+
+    public int getMore() {
+        return more;
+    }
+
+    public void setMore(int more) {
+        this.more = more;
+    }
     public ArrayList<Flashlist> getFlash_list() {
         return flash_list;
     }
