@@ -7,9 +7,16 @@
     tools:context=".data.video.VideoFragment">
    <!-- android:background="@color/gray_9"-->
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- TODO: Update blank fragment layout -->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="dagregbvxqwehhhad" />
+        android:id="@+id/smartVideo"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_item_Video"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
 
 </FrameLayout>

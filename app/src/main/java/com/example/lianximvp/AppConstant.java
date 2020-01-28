@@ -16,6 +16,8 @@ public interface AppConstant {
         String CHECK_VERIFICATION_CODE = "/api/sms/checksmscode";
         String GET_COLUMN_LIST="/api/column/columnlist";
         String GET_COLUMN_LIST_LAN= "/app/v_1_1/article/recommendlist ";
+        String GET_SHIPIN_LIST="/app/v_1_1/article/videolist";
+        String GET_ZHUANTI_LIST="/app/v_1_1/article/speciallist";
 
     }
 
