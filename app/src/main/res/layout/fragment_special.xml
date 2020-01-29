@@ -7,9 +7,14 @@
     tools:context=".data.special.SpecialFragment">
     <!--android:background="@color/gray_9"-->
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="eqwfedfvbreq" />
+        android:id="@+id/smartSpecial"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_item_special"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
 
 </FrameLayout>

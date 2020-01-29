@@ -4,6 +4,7 @@ import com.example.lianximvp.data.HttpResult;
 import com.example.lianximvp.data.User;
 import com.example.lianximvp.data.home.UserColumnList;
 import com.example.lianximvp.data.home.UserColumnListLan;
+import com.example.lianximvp.data.special.UserSpecialList;
 import com.example.lianximvp.data.video.UserVideoList;
 
 import java.util.Map;
@@ -54,7 +55,7 @@ public interface ApiService {
     Observable<HttpResult<UserColumnListLan>> getColumnListLan(@QueryMap Map<String ,String> params);
 
     @GET(GET_ZHUANTI_LIST)
-    Observable<HttpResult<UserColumnListLan>> getZhuanTiListLan(@QueryMap Map<String ,String> params);
+    Observable<HttpResult<UserSpecialList>> getZhuanTiListLan(@QueryMap Map<String ,String> params);
 
     @GET(GET_SHIPIN_LIST)
     Observable<HttpResult<UserVideoList>> getShiPinListLan(@QueryMap Map<String ,String> params);
